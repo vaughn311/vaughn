@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio Website</title>
+    <!-- You can link your CSS file here -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div id="loading-screen">
+        
+        <div id="logo-container">
+            
+            <img src="images/logo.png" id="logo" alt="Logo">
+        
+        </div>
+    
+    </div> 
+    <div id="content">   
+    <div id ="header">
+        <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+ 	        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+	    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+	</nav>
+        </div>
+<div class="container">
+    <div class="row">
+        <div class="left-col">
+            <div class="header-text">
+                <h1>Vaughn Ang</h1>
+                <p>BS Computer Science</p>
+            </div>
+        </div>
+    
+    
+        <div class="right-col">
+            <div id="about">
+                <div class="abcontainer">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, I'm Vaughn Ang, I am a Computer Science student at LPU - Cavite. At first, I was unsure about why I chose this course, but now I'm starting to truly love it. Though it's stressful and challenging to the point that I'm losing my hair, but when I figure things out on my own, there's a great sense of fulfillment and excitement. I'm excited about the progress I’ll make in improving my programming skills and eager to see what I’m capable of creating in the future.</p>
+                
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p> 
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+         
+			<ul>
+            
+			    <li>
+                
+                     		<div class="skill">
+                    
+				    <i class="fa-brands fa-python skill-logo"></i>
+                  		    <p>Python</p>
+                    
+				    <progress value="30" max="100" class="progress-bar"></progress>               
+			        </div>
+            
+			    </li>
+            
+			    <li>
+                
+			        <div class="skill">
+                    
+				    <i class="fa-brands fa-html5 skill-logo"></i><i class="fa-brands fa-css3-alt skill-logo"></i>
+                    
+				    <p>HTML / CSS</p>
+                    
+				    <progress value="60" max="100" class="progress-bar"></progress>
+   
+				</div>
+   				
+ 			    </li>
+ 
+			    <li>
+                
+                     		<div class="skill">
+                    
+				    <i class="fa-brands fa-php skill-logo"></i>
+                  		    <p>PHP</p>
+                    
+				    <progress value="30" max="100" class="progress-bar"></progress>               
+			        </div>
+            
+			    </li>
+ 
+			    <li>
+                
+                     		<div class="skill">
+                    
+				    <i class="fa-brands fa-js skill-logo"></i>
+                  		    <p>Javascript</p>
+                    
+				    <progress value="20" max="100" class="progress-bar"></progress>               
+			        </div>
+            
+			    </li>
+             
+			</ul>
+    
+		    </div>
+
+		    <div class="tab-contents" id="education">
+			<ul>
+			    <li><span>St.Thomas More Academy | 2017-2023</span><br>Skills acquired: HTML, CSS</li>
+			    <li><span>Lyceum of the Philippines University - Cavite | 2023-Present</span><br>Skills acquired: Python, PHP, MySQL, Javascript</li>
+			</ul>
+		    </div>	
+		</div>
+	    </div>
+        </div>
+    </div>
+</div>
+   <div id="portfolio">
+       <div class="container">
+           <h1 class="sub-title">Projects</h1>
+           <div class="work-list">
+               <div class="work">
+                   <img src="images/project-1.png">
+                   <div class="layer">
+                       <h3>Website with user database</h3>
+                       <p>A web platform that allows users to securely log in. It register new users, edit, and delete information.</p>
+                       <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                   </div>
+               </div>
+               <div class="work">
+                   <img src="images/project-2.png">
+		   <div class="layer">
+                       <h3>Student Information System</h3>
+                       <p>A management system that allows users to log in, add new students, search a student, and view all student records.</p>
+                       <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                   </div>
+               </div>
+               <div class="work">
+                   <img src="images/project-3.png">
+		   <div class="layer">
+                       <h3>To-Do List Website</h3>
+                       <p>The To-Do List website is a simple web-based application that allows users to create, manage, and organize tasks.</p>
+                       <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                   </div>
+               </div>
+           </div>
+           <a href class="btn">See more</a>
+       </div>
+   </div>
+   <div id="contact">
+       <div class="container">
+	   <div class="row">
+	       <div class="contact-left">
+		   <h1 class="sub-title">Contact Me</h1>
+		   <p><i class="fa-solid fa-paper-plane"></i> vaughnberryang03@gmail.com</p>
+		   <p><i class="fa-solid fa-phone"></i> 09150936778</p>
+		   <div class="social-icons">
+		       <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+		       <a href=""><i class="fa-brands fa-facebook-messenger"></i></a>
+		       <a href=""><i class="fab fa-linkedin"></i></a>
+		   </div>
+	       </div>
+	       <div class="contact-right">
+		   <form name="submit-to-google-sheet">
+		       <input type="text" name="Name" placeholder="Name" required>
+		       <input type="email" name="Email" placeholder="Email" required>
+		       <textarea name="Message" rows="5" placeholder="Message"></textarea>
+		       <button type="submit" class="btn btn2">Send</button>
+		   </form>
+                   <span id="msg"></span>
+	       </div>
+	   </div>
+        </div>
+   </div>
+   <div class="copyright">
+       <p>Copyright <i class="fa-regular fa-copyright"></i> Vaughn 2024</p>  
+   </div>
+</div>
+</div>
+<script>
+              
+    window.onload = function() {
+            
+            
+        setTimeout(function() {
+                              
+            document.getElementById('loading-screen').style.opacity = 0;
+                
+                               
+            setTimeout(function() {
+                    
+                document.getElementById('loading-screen').style.display = 'none';
+                    
+                    
+                    
+                document.getElementById('content').style.opacity = 1;
+                
+            }, 1000);            
+        }, 2000);     
+    };
+
+</script>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-150px";
+    }
+
+
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwMaF-0PuJcRu36Hmfgjec6eAVF1gduYAVKjI4afDCZ-SDZjjS-QSYo7IR-hjiKk-UW/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+          msg.innerHTML = "Message sent successfully";
+          setTimeout(function(){
+              msg.innerHTML = "";
+          },5000)
+          form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+ 
+</body>
+</html>
